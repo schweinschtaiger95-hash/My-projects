@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #c72a34;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#navbar a {
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  height: 100%;
+}
+
+#navbar a:hover {
+  background-color: #2ac7bc;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+#welcome-section {
+  height: 450px;
+  padding: 150px 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(90deg, #aaadad, #6c7070);
+}
+
+#welcome-section p {
+  font-size: 25px;
+  color: red;
+}
+
+#project-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  background-color: #5a6ea1;
+  color: white;
+}
+
+.project-tile {
+  border: 1px solid;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+#project-section .head {
+  grid-column: span 2;
+  padding: 20px; 0;
+}
+
+#contact {
+  background-color: #434345;
+  margin: 0;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+footer {
+  background-color: #434345;
+  color: white;
+  border-top: 3px solid red;
+  padding: 50px 0 0 0;
+}
+
+@media only screen (max-width: 600px) {
+  
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <a href="#welcome-section">About</a>
+        <a href="#project-section">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <section id="welcome-section">
+      <h1>Hey I'm Alex</h1>
+      <p>a web developer</p>
+    </section>
+    <section id="project-section">
+      <div class="head"><h2>These are some of my projects</h2><hr></div>
+      <div class="project-tile">
+        <a href="nascar.html">My NASCAR project</a>
+      </div>
+      <div class="project-tile">
+        <a href="quiz.html">My Quiz</a>
+      </div>
+      <div class="project-tile">
+        <a href="city-skyline.html">City skyline</a>
+      </div>
+      <div class="project-tile">
+        <a href="calc.html">JavaScript calculator</a>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Let's work together...</h2>
+          <i>How do you take your coffee?</i>
+      <a id="profile-link" href="freecodecamp.org" target="_blank">freeCodeCamp</a>
+    </section>
+    <footer>
+      <i>**Work in progress. This might be the real project portfolio in the future</i>
+      <p>© Created on <a herf="frecodecamp.org">freeCodeCamp</a></p>
+      </footer>
+
+  </body>
+</html>
+
+
